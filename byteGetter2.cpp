@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 vector<int> hexToBytes(int hex, int numBytes) {
 	
@@ -7,7 +8,7 @@ vector<int> hexToBytes(int hex, int numBytes) {
 		int byteGetter = 0XFF << (a * 8);
 		int byte;
 		byte = (byteGetter & hex);
-		byte = byte >> a * 8;
+		 byte  = byte >> a * 8;
 		ans.push_back(byte);
 	}
 			return (ans);
